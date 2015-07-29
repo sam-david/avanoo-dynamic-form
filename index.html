@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Avanoo Survey</title>
+	<script type="text/javascript" src="jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h2>Create your survey:</h2>
+ 	<h3>What type of question would you like to add?</h3>
+ 	<div id="questionCreateForm">
+	 	<select id="questionType">
+	 		<option disabled selected>Question Type</option>
+	 		<option value="radio">Radio</option>
+	 		<option value="check-box">Check Box</option>
+	 		<option value="drop-down">Drop Down</option>
+	 		<option value="text">Text Input</option>
+	 	</select>
+	 	<div id="newQuestion"></div>
+ </div>
+ <h4 ># of Survey Questions: <span id="questionCount">0</span></h4>
+ <button type="button" id="viewSurvey">View Survey</button>
+	<form id="finalSurvey" method="post"></form>
+	<div id="surveyResults"></div>
+</body>
+</html>
